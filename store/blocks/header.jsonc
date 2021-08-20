@@ -22,14 +22,13 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "width": "grow"
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
       "minicart.v2"
     ]
   },
@@ -40,7 +39,9 @@
   },
   "flex-layout.col#logo-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "width": "grow"
     },
     "children": ["logo"]
   },
@@ -48,8 +49,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "120"
     }
   },
   "header-layout.mobile": {
@@ -63,7 +64,6 @@
       "drawer",
       "logo",
       "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
