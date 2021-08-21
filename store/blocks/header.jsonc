@@ -47,7 +47,8 @@
   "flex-layout.col#search": {
       "props": {
           "width": "grow",
-          "verticalAlign": "middle"
+          "verticalAlign": "middle",
+          "horizontalAlign": "middle"
       },
       "children": ["search-bar"]
   },

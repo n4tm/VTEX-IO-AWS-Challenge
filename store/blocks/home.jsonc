@@ -90,7 +90,10 @@
       "children": ["tab-content.item#promocao", "tab-content.item#home2"]
   },
   "tab-content.item#promocao": {
-      "children": [],
+      "children": [
+        "slider-layout#text-test",
+        "search-result-layout.customQuery#home"
+      ],
       "props": {
           "tabId": "promocao"
       }
@@ -100,5 +103,41 @@
       "props": {
           "tabId": "home2"
       }
+  },
+  "slider-layout#text-test": {
+    "props": {
+        "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "blockClass": "carousel"
+    },
+    "children": ["image#slider1", "image#slider2"]
+},
+
+"image#slider1": {
+    "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T204030Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3b5001d0ed8de48771873d170f0a523e9def14414eccfc463461259edcadabbf",
+        "maxHeight": 320
+    }
+},
+"image#slider2": {
+    "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T204100Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b1c2fd00b5eb85dbb27f1fc133d1903e909c9e485499883b4d18fd2f48bfed9c",
+        "maxHeight": 320
+    }
+},
+
+//Product List
+"search-result-layout.customQuery#home": {
+    "props": {
+        "querySchema": {
+            "skusFilter": "FIRST_AVAILABLE",
+            "simulationBehavior": "skip"
+        }
+    }
   }
 }

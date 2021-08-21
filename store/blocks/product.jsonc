@@ -24,8 +24,8 @@
       "verticalAlign": "middle"
     },
     "children": [
-      "product-name",
-      "product-brand",
+      "vtex.product-list:product-name",
+      "vtex.product-list:product-brand",
       "product-identifier.product",
       "product-price",
       "availability-subscriber",

@@ -24,3 +24,6 @@
 .searchBarContainer :global(.vtex-input__suffix){
     background-color: #212121;
 }
+.imageElement {
+    border-radius: 20px;
+}
