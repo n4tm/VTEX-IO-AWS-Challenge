@@ -109,7 +109,7 @@
       "tabId": "7maravilhas"
     }
   },
-  "slider-layout#slider-home": { //Início do Slider Layout------------------------------
+  "slider-layout#slider-home": {
     "props": {
       "fullWidth": false,
       "autoplay":{
