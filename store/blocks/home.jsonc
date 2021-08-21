@@ -13,18 +13,28 @@
       //Todo: avoid break on responsive
       "children": [
           "tab-list.item#promocao",
+          "tab-list.item#corinthians",
           "tab-list.item#palmeiras",
           "tab-list.item#signos",
           "tab-list.item#divertidos",
           "tab-list.item#maravilhas",
           "tab-list.item#guerreiros",
-          "tab-list.item#album1"
+          "tab-list.item#album1",
+          "tab-list.item#album2",
+          "tab-list.item#album3"
       ]
   },
   "tab-list.item#promocao": {
       "props": {
           "tabId": "promocao",
           "label": "PROMOÇÃO",
+          "defaultActiveTab": true
+      }
+  },
+  "tab-list.item#corinthians": {
+      "props": {
+          "tabId": "corinthians",
+          "label": "CORINTHIANS",
           "defaultActiveTab": true
       }
   },
@@ -62,6 +72,18 @@
       "props": {
           "tabId": "album1",
           "label": "ÁLBUM 1"
+      }
+  },
+  "tab-list.item#album2": {
+      "props": {
+          "tabId": "album2",
+          "label": "ÁLBUM 2"
+      }
+  },
+  "tab-list.item#album3": {
+      "props": {
+          "tabId": "album3",
+          "label": "ÁLBUM 3"
       }
   },
   "tab-content#home": {
