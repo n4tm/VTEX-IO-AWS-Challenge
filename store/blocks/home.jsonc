@@ -1,163 +1,82 @@
 {
-  "store.home": { 
-    "blocks": [
-      "tab-layout#home",
-      "slider-layout#slider-home",
-      "rich-text"
-    ]
+  "store.home": {
+      "blocks": ["tab-layout#home"]
   },
-  
   "tab-layout#home": {
-    "children": [
-      "tab-list#home",
-      "tab-content#home"
-    ],
-    "props": {
-      "defaultActiveTabId": "home1"
-    }
+      "children": ["tab-list#home", "tab-content#home"],
+      "props": {
+          "blockClass": "home",
+          "defaultActiveTabId": "promocao"
+      }
   },
   "tab-list#home": {
-    "children": [
-      "tab-list.item#promocao",
-      "tab-list.item#flamengo",
-      "tab-list.item#vasco",
-      "tab-list.item#signos",
-      "tab-list.item#divertidos",
-      "tab-list.item#7maravilhas"
-    ]
+      //Todo: avoid break on responsive
+      "children": [
+          "tab-list.item#promocao",
+          "tab-list.item#palmeiras",
+          "tab-list.item#signos",
+          "tab-list.item#divertidos",
+          "tab-list.item#maravilhas",
+          "tab-list.item#guerreiros",
+          "tab-list.item#album1"
+      ]
   },
   "tab-list.item#promocao": {
-    "props": {
-      "tabId": "promocao",
-      "label": "Promoção",
-      "defaultActiveTab": true
-    }
+      "props": {
+          "tabId": "promocao",
+          "label": "PROMOÇÃO",
+          "defaultActiveTab": true
+      }
   },
-  "tab-list.item#flamengo": {
-    "props": {
-      "tabId": "flamengo",
-      "label": "Flamengo"
-    }
-  },
-  "tab-list.item#vasco": {
-    "props": {
-      "tabId": "vasco",
-      "label": "Vasco"
-    }
+  "tab-list.item#palmeiras": {
+      "props": {
+          "tabId": "palmeiras",
+          "label": "PALMEIRAS"
+      }
   },
   "tab-list.item#signos": {
-    "props": {
-      "tabId": "signos",
-      "label": "Signos"
-    }
+      "props": {
+          "tabId": "signos",
+          "label": "SIGNOS"
+      }
   },
   "tab-list.item#divertidos": {
-    "props": {
-      "tabId": "divertidos",
-      "label": "Divertidos"
-    }
+      "props": {
+          "tabId": "divertidos",
+          "label": "DIVERTIDOS"
+      }
   },
-  "tab-list.item#7maravilhas": {
-    "props": {
-      "tabId": "7maravilhas",
-      "label": "7 Maravilhas"
-    }
+  "tab-list.item#maravilhas": {
+      "props": {
+          "tabId": "maravilhas",
+          "label": "7 MARAVILHAS"
+      }
+  },
+  "tab-list.item#guerreiros": {
+      "props": {
+          "tabId": "guerreiros",
+          "label": "GUERREIROS"
+      }
+  },
+  "tab-list.item#album1": {
+      "props": {
+          "tabId": "album1",
+          "label": "ÁLBUM 1"
+      }
   },
   "tab-content#home": {
-    "children": [
-      "tab-content.item#promocao",
-      "tab-content.item#flamengo",
-      "tab-content.item#vasco",
-      "tab-content.item#signos",
-      "tab-content.item#divertidos",
-      "tab-content.item#7maravilhas"
-    ]
+      "children": ["tab-content.item#promocao", "tab-content.item#home2"]
   },
   "tab-content.item#promocao": {
-    "children": [],
-    "props": {
-      "tabId": "promocao"
-    }
+      "children": [],
+      "props": {
+          "tabId": "promocao"
+      }
   },
-  "tab-content.item#flamengo": {
-    "children": [],
-    "props": {
-      "tabId": "flamengo"
-    }
-  },
-  "tab-content.item#vasco": {
-    "children": [],
-    "props": {
-      "tabId": "vasco"
-    }
-  },
-  "tab-content.item#signos": {
-    "children": [],
-    "props": {
-      "tabId": "signos"
-    }
-  },
-  "tab-content.item#divertidos": {
-    "children": [],
-    "props": {
-      "tabId": "divertidos"
-    }
-  },
-  "tab-content.item#7maravilhas": {
-    "children": [],
-    "props": {
-      "tabId": "7maravilhas"
-    }
-  },
-  "slider-layout#slider-home": {
-    "props": {
-      "fullWidth": false,
-      "autoplay":{
-        "timeout": "2000",
-        "stopOnHover": false
-      },
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    },
-    "children": [
-      "image#1",
-      "image#2",
-      "image#3"
-    ]
-  },
-  "image#1": {
-    "props": {
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210820%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210820T163024Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fa949f60c988641dfa430bb6e63d44a4ecfeb03f94b0bca9dfc8b6eeae798c7e",
-      "maxHeight": "24",
-      "alt": "slider1"
-    }
-  },
-  "image#2": {
-    "props": {
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210820%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210820T163909Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3989a41e1e5fff2a5d2ab23ba43376737a96283be9f7f90d2b4caa7bd3ac0ae9",
-      "maxHeight": "24",
-      "alt": "slider2"
-    }
-  },
-  "image#3": {
-    "props": {
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1625781920-POST.png",
-      "maxHeight": "24",
-      "alt": "slider3"
-    }
-  },
-  "rich-text": {
-    "props": {
-      "text": "Desafio Upmedal5",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
+  "tab-content.item#home2": {
+      "children": [],
+      "props": {
+          "tabId": "home2"
+      }
   }
 }
