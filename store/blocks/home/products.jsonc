@@ -113,7 +113,10 @@
         }
     },
     "flex-layout.row#results": {
-        "children": ["flex-layout.col#search-product"]
+        "children": ["flex-layout.col#search-product"],
+        "props": {
+            "marginBottom": 5
+        }
     },
     "flex-layout.col#search-product": {
         "children": ["search-content"]

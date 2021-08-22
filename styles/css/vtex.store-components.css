@@ -35,9 +35,18 @@
     margin-left: 20px;
 }
 
-:global(.vtex-store-components-3-x-container) {
-    width: auto;
+:global(.vtex-search-result-3-x-searchResultContainer) {
+    max-width: 800px;
 }
+
+:global(.vtex-tab-layout-0-x-contentItem) {
+    margin-top: 138px;
+}
+
+:global(.vtex-search-result-3-x-gallery) {
+    padding-left: 0rem;
+}
+
 :global(.vtex-store-components-3-x-productImagesContainer) {
     border: 1px solid #59ff00;
     padding: 5px;

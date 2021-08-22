@@ -1,4 +1,6 @@
 .flexRowContent--main-header {
+    position: fixed;
+    z-index: 99;
     background-color: #212121;
     height: 85px;
 }
