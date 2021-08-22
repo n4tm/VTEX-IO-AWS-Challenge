@@ -1,0 +1,10 @@
+.summaryItemLabel {
+    color: white;
+}
+
+:global(.vtex-checkout-summary-0-x-summaryItemLabel) {
+    color: white;
+}
+:global(.vtex-checkout-summary-0-x-price) {
+    color: #59ff00;
+}
