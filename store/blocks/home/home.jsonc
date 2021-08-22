@@ -6,7 +6,7 @@
       "children": ["tab-list#home", "tab-content#home"],
       "props": {
           "blockClass": "home",
-          "defaultActiveTabId": "promocao"
+          "defaultActiveTabId": "todos"
       }
   },
   "tab-list#home": {
@@ -18,17 +18,13 @@
           "tab-list.item#signos",
           "tab-list.item#divertidos",
           "tab-list.item#maravilhas",
-          "tab-list.item#guerreiros",
-          "tab-list.item#album1",
-          "tab-list.item#album2",
-          "tab-list.item#album3"
+          "tab-list.item#guerreiros"
       ]
   },
   "tab-list.item#promocao": {
       "props": {
           "tabId": "promocao",
-          "label": "PROMOÇÃO",
-          "defaultActiveTab": true
+          "label": "PROMOÇÃO"
       }
   },
   "tab-list.item#corinthians": {
@@ -67,37 +63,26 @@
           "label": "GUERREIROS"
       }
   },
-  "tab-list.item#album1": {
-      "props": {
-          "tabId": "album1",
-          "label": "ÁLBUM 1"
-      }
-  },
-  "tab-list.item#album2": {
-      "props": {
-          "tabId": "album2",
-          "label": "ÁLBUM 2"
-      }
-  },
-  "tab-list.item#album3": {
-      "props": {
-          "tabId": "album3",
-          "label": "ÁLBUM 3"
-      }
-  },
   "tab-content#home": {
       "children": [
+            "tab-content.item#todos",
             "tab-content.item#promocao",
             "tab-content.item#corinthians",
             "tab-content.item#palmeiras",
             "tab-content.item#signos",
             "tab-content.item#divertidos",
             "tab-content.item#maravilhas",
-            "tab-content.item#guerreiros",
-            "tab-content.item#album1",
-            "tab-content.item#album2",
-            "tab-content.item#album3"
+            "tab-content.item#guerreiros"
         ]
+  },
+  "tab-content.item#todos": {
+      "children": [
+        "flex-layout.row#slider",
+        "search-result-layout.customQuery#todos"
+      ],
+      "props": {
+          "tabId": "todos"
+      }
   },
   "tab-content.item#promocao": {
       "children": [
@@ -165,32 +150,5 @@
       "props": {
           "tabId": "guerreiros"
       }
-  },
-  "tab-content.item#album1": {
-      "children": [
-        "flex-layout.row#slider",
-        "search-result-layout.customQuery#album1"
-      ],
-      "props": {
-          "tabId": "album1"
-      }
-  },
-  "tab-content.item#album2": {
-      "children": [
-        "flex-layout.row#slider",
-        "search-result-layout.customQuery#album2"
-      ],
-      "props": {
-          "tabId": "album2"
-      }
-  },
-  "tab-content.item#album3": {
-      "children": [
-        "flex-layout.row#slider",
-        "search-result-layout.customQuery#album3"
-      ],
-      "props": {
-          "tabId": "album3"
-      }
-  } 
+  }
 }

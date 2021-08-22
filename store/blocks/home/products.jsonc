@@ -1,8 +1,9 @@
 {
     //Product List
-    "search-result-layout.customQuery#promocao": {
+    "search-result-layout.customQuery#todos": {
         "props": {
             "querySchema": {
+                "skusFilter": "ALL_AVAILABLE",
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
@@ -12,14 +13,28 @@
         },
         "blocks": ["search-result-layout.desktop"]
     },
-    "search-result-layout.customQuery#corinthians": {
+    "search-result-layout.customQuery#promocao": {
         "props": {
             "querySchema": {
+                "skusFilter": "ALL_AVAILABLE",
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
-                "queryField": "Corinthians",
-                "mapField": "category-2"
+                "queryField": "40",
+                "mapField": "category-3"
+            }
+        },
+        "blocks": ["search-result-layout.desktop"]
+    },
+    "search-result-layout.customQuery#corinthians": {
+        "props": {
+            "querySchema": {
+                "skusFilter": "ALL_AVAILABLE",
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "42",
+                "mapField": "category-3"
             }
         },
         "blocks": ["search-result-layout.desktop"]
@@ -27,11 +42,12 @@
     "search-result-layout.customQuery#palmeiras": {
         "props": {
             "querySchema": {
+                "skusFilter": "ALL_AVAILABLE",
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
-                "queryField": "Palmeiras",
-                "mapField": "category-2"
+                "queryField": "43",
+                "mapField": "category-3"
             }
         },
         "blocks": ["search-result-layout.desktop"]
@@ -39,11 +55,12 @@
     "search-result-layout.customQuery#signos": {
         "props": {
             "querySchema": {
+                "skusFilter": "ALL_AVAILABLE",
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
-                "queryField": "Signos",
-                "mapField": "category-2"
+                "queryField": "44",
+                "mapField": "category-3"
             }
         },
         "blocks": ["search-result-layout.desktop"]
@@ -51,10 +68,11 @@
     "search-result-layout.customQuery#divertidos": {
         "props": {
             "querySchema": {
+                "skusFilter": "ALL_AVAILABLE",
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
-                "queryField": "Divertidos",
+                "queryField": "45",
                 "mapField": "category-2"
             }
         },
@@ -63,11 +81,12 @@
     "search-result-layout.customQuery#maravilhas": {
         "props": {
             "querySchema": {
+                "skusFilter": "ALL_AVAILABLE",
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
-                "queryField": "7 Maravilhas",
-                "mapField": "category-2"
+                "queryField": "48",
+                "mapField": "category-3"
             }
         },
         "blocks": ["search-result-layout.desktop"]
@@ -76,47 +95,12 @@
     "search-result-layout.customQuery#guerreiros": {
         "props": {
             "querySchema": {
+                "skusFilter": "ALL_AVAILABLE",
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
-                "queryField": "Guerreiros",
-                "mapField": "category-2"
-            }
-        },
-        "blocks": ["search-result-layout.desktop"]
-    },
-    "search-result-layout.customQuery#album1": {
-        "props": {
-            "querySchema": {
-                "orderByField": "OrderByReleaseDateDESC",
-                "hideUnavailableItems": true,
-                "maxItemsPerPage": 8,
-                "queryField": "Álbum 1",
-                "mapField": "category-2"
-            }
-        },
-        "blocks": ["search-result-layout.desktop"]
-    },
-    "search-result-layout.customQuery#album2": {
-        "props": {
-            "querySchema": {
-                "orderByField": "OrderByReleaseDateDESC",
-                "hideUnavailableItems": true,
-                "maxItemsPerPage": 8,
-                "queryField": "Álbum2",
-                "mapField": "category-2"
-            }
-        },
-        "blocks": ["search-result-layout.desktop"]
-    },
-    "search-result-layout.customQuery#album3": {
-        "props": {
-            "querySchema": {
-                "orderByField": "OrderByReleaseDateDESC",
-                "hideUnavailableItems": true,
-                "maxItemsPerPage": 8,
-                "queryField": "Álbum 3",
-                "mapField": "category-2"
+                "queryField": "45",
+                "mapField": "category-3"
             }
         },
         "blocks": ["search-result-layout.desktop"]

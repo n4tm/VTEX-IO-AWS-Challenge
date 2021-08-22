@@ -4,18 +4,41 @@
 }
 
 .listContainer :global(.vtex-tab-layout-0-x-listItem) {
+    min-width: 160px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 .listContainer :global(.vtex-tab-layout-0-x-listItemActive) {
-    background-color: None;
+    background-color: transparent;
 }
 
 .listItem :global(.vtex-button){
+
+    display: inline-flex;
     color: white;
-    background-color: None;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
+:global(.vtex-tab-layout-0-x-listItem) {
+    text-align: center;
+}
+
+.listItem :global(.vtex-button__label){
+    position: relative;
+    font-size: 0.875rem;
+    max-width: 264px;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    text-transform: uppercase;
+}
+
 
 .listItemActive {
     box-sizing: border-box;
