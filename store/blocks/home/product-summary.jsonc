@@ -1,0 +1,10 @@
+{
+    "product-summary.shelf": {
+        "children": [
+            "product-summary-name",
+            "product-summary-image",
+            "product-summary-price",
+            "product-summary-buy-button"
+        ]
+    }
+}

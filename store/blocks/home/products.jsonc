@@ -1,12 +1,13 @@
 {
+    //Product List
     "search-result-layout.customQuery#home": {
         "props": {
             "querySchema": {
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
-                "maxItemsPerPage": 8,
-                "queryField": "Blue Top Retro Camera",
-                "mapField": "ft"
+                "maxItemsPerPage": 8
+                // "queryField": "Blue Top Retro Camera",
+                // "mapField": "ft"
             }
         },
         "blocks": ["search-result-layout.desktop"]
@@ -19,9 +20,41 @@
         }
     },
     "flex-layout.row#results": {
-        "children": ["flex-layout.col#search"]
+        "children": ["flex-layout.col#search-product"]
     },
-    "flex-layout.col#search": {
+    "flex-layout.col#search-product": {
         "children": ["search-content"]
+    },
+    "search-content": {
+        "blocks": ["gallery", "not-found"]
+    },
+    "gallery": {
+        "props": {
+            "layouts": [
+                {
+                    "name": "whole",
+                    "component": "OneOrTwoLineSummary",
+                    "itemsPerRow": {
+                        "desktop": 2,
+                        "mobile": 1
+                    }
+                },
+                // {
+                //     "name": "two",
+                //     "component": "OneOrTwoLineSummary",
+                //     "itemsPerRow": 2
+                // },
+                {
+                    "name": "many",
+                    "component": "ManyByLineSummary",
+                    "itemsPerRow": {
+                        "desktop": 2,
+                        "mobile": 1
+                    }
+                }
+            ],
+            "OneOrTwoLineSummary": "product-summary.shelf"
+            // "ManyByLineSummary": "product-summary.shelf"
+        }
     }
 }
