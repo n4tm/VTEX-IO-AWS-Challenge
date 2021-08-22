@@ -1,4 +1,14 @@
 {
+    "flex-layout.row#slider": {
+        "children": ["slider-layout#text-test"],
+        "props": {
+            "marginBottom": 8,
+            "marginTop": 5
+        }
+    },
+
+        //slider-layout----------
+    //To do: Add a space on top and make the arrows go down
     "slider-layout#text-test": {
         "props": {
             "itemsPerPage": {
@@ -13,15 +23,17 @@
         "children": ["image#slider1", "image#slider2"]
     },
 
+    //To do - Resolver problema das urls que mudam
     "image#slider1": {
         "props": {
-            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T204030Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3b5001d0ed8de48771873d170f0a523e9def14414eccfc463461259edcadabbf",
+            // "src": "/assets/slider01.png",
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T145811Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e318e7d511b6126039f3e9777f8e05ba3ea66774304cead39a02b56b65b6bde1",
             "maxHeight": 320
         }
     },
     "image#slider2": {
         "props": {
-            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T204100Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b1c2fd00b5eb85dbb27f1fc133d1903e909c9e485499883b4d18fd2f48bfed9c",
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T145811Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=9434e502fe13031c242d5065e3d3065810944043762bebab320e287338a0f14c",
             "maxHeight": 320
         }
     }
