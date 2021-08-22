@@ -19,3 +19,7 @@
 .minicartCheckoutButton :global(.vtex-button__label){
     color: black;
 }
+
+:global(.vtex-minicart-2-x-overlay) {
+    filter: blur(.4);
+}

@@ -111,7 +111,7 @@
   
   "tab-content.item#corinthians": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#corinthians"
       ],
       "props": {
@@ -121,7 +121,7 @@
   
   "tab-content.item#palmeiras": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#palmeiras"
       ],
       "props": {
@@ -131,7 +131,7 @@
   
   "tab-content.item#signos": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#signos"
       ],
       "props": {
@@ -141,7 +141,7 @@
   
   "tab-content.item#divertidos": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#divertidos"
       ],
       "props": {
@@ -150,7 +150,7 @@
   },
   "tab-content.item#maravilhas": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#maravilhas"
       ],
       "props": {
@@ -159,7 +159,7 @@
   },
   "tab-content.item#guerreiros": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#guerreiros"
       ],
       "props": {
@@ -168,7 +168,7 @@
   },
   "tab-content.item#album1": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#album1"
       ],
       "props": {
@@ -177,7 +177,7 @@
   },
   "tab-content.item#album2": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#album2"
       ],
       "props": {
@@ -186,7 +186,7 @@
   },
   "tab-content.item#album3": {
       "children": [
-        "slider-layout#text-test",
+        "flex-layout.row#slider",
         "search-result-layout.customQuery#album3"
       ],
       "props": {
